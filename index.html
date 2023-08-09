@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+
+    <div class="player">
+        <div class="details">
+            <div class="music-number">playing x of y</div>
+            <div class="music-img"></div>
+            <div class="music-name">Music Name</div>
+            <div class="music-singer">Music Singer</div>
+        </div>
+
+        <div class="slider-container">
+            <div class="start-time">0:00</div>
+            <input type="range" class="time-range" min="0" max="100" value="0">
+            <div class="end-time">0:00</div>
+        </div>
+
+        <div class="slider-container">
+            <i class="fa-solid fa-volume-low"></i>
+            <input type="range" min="0" max="100" value="80" class="volume-range">
+            <i class="fa-solid fa-volume-high"></i>
+        </div>
+
+        <div class="buttons">
+            <div class="random-btn btn">
+                <i class="fas fa-random fa-2x" title="random"></i>
+            </div>
+            <div class="prev-btn btn">
+                <i class="fa-solid fa-backward-step fa-2x"></i>
+            </div>
+            <div class="playpause-btn btn">
+                <i class="fa-solid fa-circle-play fa-3x"></i>
+            </div>
+            <div class="next-btn btn">
+                <i class="fa-solid fa-forward-step fa-2x"></i>
+            </div>
+            <div class="repeat-btn btn">
+                <i class="fa-solid fa-rotate-right fa-2x" title="repeat"></i>
+            </div>
+
+            <audio src="" class="music"></audio>
+        </div>
+
+        <div id="wave">
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
